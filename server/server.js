@@ -6,6 +6,8 @@ const massive = require("massive")
 
 const app = express()
 
+app.use(express.static(`${__dirname}/../build`))
+
 const {
     SERVER_PORT,
     SESSION_SECRET,
